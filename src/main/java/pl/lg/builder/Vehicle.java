@@ -9,6 +9,7 @@ public class Vehicle {
     private Integer maxVelocity;
     private String numberPlate;
 
+    //klasa wewnętrzna publiczna (musi być dostępna dla innych obiektów)
     public static class Builder {
         private Integer id = null;
         private String model = null;
