@@ -84,4 +84,16 @@ public class Vehicle {
     public String getNumberPlate() {
         return numberPlate;
     }
+
+    /* UWAGA: poniższy konstruktor ustawiający pola klasy Vehicle - tylko dla porównania z Builder-em !!!
+       We wzorcu go nie ma, nie ma też setterów - pola ustawiasz poprzez buildera - patrz VehicleBuilderCheck
+     */
+    public Vehicle(Integer id, String model, Integer wheels, Integer airbags, Integer maxVelocity, String numberPlate) {
+        this.id = id;
+        this.model = model;
+        this.wheels = wheels;
+        this.airbags = airbags;
+        this.maxVelocity = maxVelocity;
+        this.numberPlate = numberPlate;
+    }
 }
